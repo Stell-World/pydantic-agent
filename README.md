@@ -74,6 +74,20 @@ uvicorn agentic:app --host 0.0.0.0 --port 8000 --reload
 
 L'interface sera accessible sur **http://localhost:8000**
 
+### Docker
+```bash
+# Build and run with Docker
+docker build -t kwame-ai .
+docker run -p 8000:8000 --env-file .env kwame-ai
+```
+
+### Déploiement sur Render
+1. Connecter votre dépôt GitHub à Render.com
+2. Importer le dépôt `git@github.com:FredyHoundayi/pydantic-agent.git`
+3. Render détectera automatiquement le Dockerfile
+4. Configurer les variables d'environnement dans le dashboard Render
+5. Déployer !
+
 ### Ligne de commande
 ```bash
 source venv/bin/activate
@@ -117,6 +131,7 @@ python agentic.py
 ```
 pydantic-agent/
 ├── agentic.py              # Fichier principal de l'agent
+├── Dockerfile              # Configuration Docker pour Render
 ├── tools/                  # Outils intégrés
 │   ├── calendar_manager.py  # Gestion du calendrier
 │   ├── tavily_search.py    # Recherche web
