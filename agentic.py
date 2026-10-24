@@ -45,7 +45,7 @@ except Exception as e:
 # Configuration des modèles
 logger.info("⚙️ Configuration des modèles IA")
 llama_model = GroqModel(
-    'llama-3.1-8b-instant',
+    'openai/gpt-oss-20b',
     provider=GroqProvider(api_key=os.getenv('GROQ_API_KEY'))
 )
 logger.info("✅ Modèle Llama 3.1 8b Instant configuré")
