@@ -186,3 +186,4 @@ Créé par **Fredy Houndayi** - Agent intelligent KWAME AI
 ---
 
 🚀 **KWAME AI est prêt à vous aider avec tous vos projets !**
+"# pydantic-agent" 
